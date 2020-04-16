@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body ng-app="myApp">
+    <!-- PRIMEIRO -->
+    <!-- <div ng-app="">
+        <p>A soma de 5+5 eh: {{ 5 + 5 }}</p>
+    </div> -->
+
+    <!-- SEGUNDO -->
+    <!-- <div ng-app="" ng-init="myCol='lightblue'">
+        <p style="color:{{myCol}}" ng-model="myCol">A soma de 5+5 eh: {{ 5 + 5 }}</p>
+        <input style="background-color:{{myCol}}" ng-model="myCol">
+    </div> -->
+
+    <!-- TERCEIRO -->
+    <!-- <div ng-app="myApp" ng-controller="myCtrl">
+        {{ firstName + " " + lastName }}
+    </div> -->
+
+    <!-- QUARTO -->
+    <!-- <div ng-app="myApp" ng-controller="myCtrl">
+        Nome: <input ng-model="Nome"> Sobrenome: <input ng-model="Sobrenome">
+        <p>{{ Nome + " " + Sobrenome }}</p>
+    </div> -->
+
+    <!-- QUINTO -->
+    <!-- <div ng-app="myApp" ng-controller="myCtrl">
+        <p>Today's welcome message is:</p>
+        <div ng-bind-html="myWelcome"></div>
+    </div> -->
+
+    <!-- SEXTO -->
+    <!-- <div ng-app="myApp" ng-controller="myCtrl">
+        <p> The name is {{lastName | uppercase}} </p>
+    </div> -->
+
+    <!-- SETIMO -->
+    <!-- <p><a href="#/!">Main</a></p>
+    <a href="#!red">Red</a>
+    <a href="#!green">Green</a>
+    <a href="#!blue">Blue</a>
+    <div ng-view></div> -->
+
+    <!-- OITAVO -->
+
+    <div ng-app="myShoppingList" ng-controller="myCtrl" class="w3-card-2 ng-scope" style="max-width:400px;">
+        <header class="w3-container w3-light-grey w3-padding-16">
+            <h3>My Shopping List</h3>
+        </header>
+        <ul class="w3-ul">
+            <li ng-repeat="x in products">
+                {{x}}<span ng-click="removeItem($index)">&times;</span>
+            </li>
+        </ul>
+        <div class="w3-container w3-light-grey w3-padding-16">
+            <div class="w3-row w3-margin-top">
+                <div class="w3-col s10">
+                    <input placeholder="Adicione seus itens aqui!" ng-model="addMe" class="w3-input w3-border w3-padding ng-pristine ng-untouched ng-valid ng-empty">
+                </div>
+                <div class="w3-col s2">
+                    <button ng-click="addItem()" class="w3-btn w3-padding">Add</button>
+                </div>
+            </div>
+            <p class="w3-text-red ng-binding">{{errortext}}</p>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script>
+        /* TERCEIRO */
+        // var app = angular.module("myApp", []);
+
+        // app.controller("myCtrl", function($scope) {
+        //     $scope.firstName = "John";
+        //     $scope.lastName = "Doe";
+        // });
+
+        /* QUARTO */
+        // var app = angular.module("myApp", []);
+
+        // app.controller("myCtrl", function($scope) {
+        //     $scope.Nome = "";
+        //     $scope.Sobrenome = "";
+        // });
+
+        /* QUINTO */
+        // var app = angular.module('myApp', []);
+        // app.controller('myCtrl', function($scope, $http) {
+        //     $http.get("ajax.html")
+        //         .then(function(response) {
+        //             $scope.myWelcome = response.data;
+        //         });
+        // });
+        /* QUINTO MAIS COMPLETO */
+        // var app = angular.module('myApp', []);
+        // app.controller('myCtrl', function($scope, $http, $sce) {
+        //     $http({
+        //         method: "GET",
+        //         url: "ajax.html"
+        //     }).then(function mySuccess(response) {
+        //         $scope.myWelcome = $sce.trustAsHtml(response.data);
+        //     }, function myError(response) {
+        //         $scope.myWelcome = response.statusText;
+        //     });
+        // });
+
+        /* SEXTO */
+        // var app = angular.module('myApp', []);
+        // app.controller('myCtrl', function($scope, $http, $sce) {
+        //     $scope.lastName = "Maria";
+        // });
+
+        /* SETIMO */
+        // var app = angular.module("myApp", ["ngRoute"]);
+        // app.config(function($routeProvider) {
+        //     $routeProvider
+        //         .when("/", {
+        //             templateUrl: "index.html"
+        //         })
+        //         .when("/red", {
+        //             templateUrl: "red.html"
+        //         })
+        //         .when("/green", {
+        //             templateUrl: "green.html"
+        //         })
+        //         .when("/blue", {
+        //             templateUrl: "blue.html"
+        //         });
+        // });
+
+        /* OITAVO */
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function($scope) {
+            $scope.products = ["Milk", "Bread", "Cheese"];
+            $scope.addItem = function() {
+                $scope.errortext = "";
+                if (!$scope.addMe) {
+                    return;
+                }
+                if ($scope.products.indexOf($scope.addMe) == -1) {
+                    $scope.products.push($scope.addMe);
+                } else {
+                    $scope.errortext = "O item ja se encontra na lista.";
+                }
+            }
+            $scope.removeItem = function(x) {
+                $scope.errortext = "";
+                $scope.products.splice(x, 1);
+            }
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- https://www.w3schools.com/angular/angular_intro.asp  -->

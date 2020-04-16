@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOS JS</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        p {
+            height: 1700px;
+        }
+        
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p></p>
+    <div data-aos="flip-up" data-aos-duration="1000"></div>
+    <div data-aos="flip-up" data-aos-duration="1000" style="background-color: green;"></div>
+    <div data-aos="flip-up" data-aos-duration="1000" style="background-color: blue;"></div>
+    <div data-aos="flip-up" data-aos-duration="1000" style="background-color: blueviolet;"></div>
+    <div data-aos="flip-up" data-aos-duration="1000" style="background-color: yellow;"></div>
+
+    <script src=" https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f1f2f4;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sidebar {
+    background-color: #2D3035;
+    height: 100%;
+    width: 300px;
+    float: left;
+}
+
+.topo {
+    background-color: #22252A;
+    padding: 25px 10px;
+    text-align: center;
+    height: 80px;
+}
+
+.topo i{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.topo h3 {
+    color: white;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.menu {
+    padding: 60px 50px 0 50px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    padding: 20px 0;
+}
+
+.menu ul li a {
+    color: #717171;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.close {
+    margin-top: 400px;
+    padding: 0 0;
+}
+
+.main-content {
+    float: left;
+    width: calc(100% - 300px);
+    height: 100%;
+}
+
+header {
+    padding: 25px 30px;
+    background-color: white;
+    border-bottom: 2px solid #ccc;
+    height: 80px;
+}
+
+.campo-pesquisa {
+    float: right;
+}
+
+.campo-pesquisa form {
+    display: inline-block;
+}
+
+.campo-pesquisa input {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+}
+
+.campo-pesquisa input:focus {
+    outline: none;
+}
+
+.icone-pesquisa {
+    background-color: #d6d6d6;
+    padding: 7px;
+    color: white;
+    display: inline-block;
+    border-radius: 5px 0 0 5px;
+    width: 30px;
+    height: 30px;
+    margin-top: -2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.icone-alerta {
+    float: right;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    background-color: #ffebee;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icone-alerta p {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: inline-block;
+    color: white;
+    background-color: #ef5350;
+    padding: 3px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.icone-alerta i {
+    font-size: 20px;
+    color: #ef5350;
+    line-height: 30px;
+}
+
+.nome-usuario {
+    float: left;
+}
+
+.nome-usuario h2 {
+    font-weight: normal;
+    font-size: 23px;
+    color: #a7a7a7;
+    cursor: pointer;
+}
+
+.content1 {
+    float: left;
+    width: 70%;
+    padding: 30px;
+    height: calc(100% - 80px);
+    overflow-y: auto;
+}
+
+.w50 {
+    width: 49%;
+    float: left;
+}
+
+.w50:last-child {
+    margin-left: 2%;
+}
+
+.panel {
+    width: 100%;
+    float: left;
+    background-color: white;
+    border: 2px solid #ebebeb;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 4%;
+}
+
+.panel h2 {
+    color: #7f7f7f;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.panel p {
+    color: #b2b2b2;
+    font-size: 17px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.content2 {
+    float: left;
+    width: 30%;
+    height: calc(100% - 80px);
+    overflow-y: auto;
+    background-color: #ebeff6;
+    padding: 20px 25px;
+}
+
+.atividades-topo h2 {
+    color: #7f7f7f;
+    font-size: 22px;
+    padding: 15px;
+    border-bottom: 2px solid #ccc;
+}
+
+.atividade-registro{
+    padding: 20px 10px;    
+    border-left: 1px solid #bbb;
+}
+
+.atividade-registro h2{
+    color: #aaa;
+    font-size: 20px;
+    font-weight: normal;
+    position: relative;
+    top: -20px;
+}
+
+.atividade-registro p{
+    color: #b2b2b2;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-bottom: 40px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    position: relative;
+    float: left;
+    top: -20px;
+    left: -18px;
+    background-color: #ebeff6;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #babec4;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9fa4ad;
+}
+
+@media screen and (max-width: 768px){
+    .sidebar{
+        display: none;
+        position: relative;
+        z-index: 9999;
+    }
+    .topo i{
+        display: block;
+    }
+    .main-content{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .content1{
+        width: 100%;
+    }
+    .w50{
+        width: 100%;
+    }
+    .content2{
+        display: none;
+    }
+}

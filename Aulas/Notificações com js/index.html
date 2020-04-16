@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script src="push.min.js"></script>
+    <script>
+        if (Push.Permission.get() != "granted") {
+            Push.Permission.request();
+        }
+
+        if (Push.Permission.get() == "granted") {
+            Push.create('Ola da Danki Code!', {
+                body: 'Esta é uma notificação.',
+                icon: 'iconebell.png',
+                timeout: 5000,
+                onClick: function() {
+                    window.location.href = "https://dankicode.com";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

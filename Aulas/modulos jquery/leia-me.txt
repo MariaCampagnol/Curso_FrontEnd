@@ -1,0 +1,2 @@
+- Aqui estão todas as aulas dos módulos do jquery. 
+- Seguindo a mesma ordem da listagem das aulas no site.

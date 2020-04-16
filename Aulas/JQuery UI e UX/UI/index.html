@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery UI</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <style>
+        #primeira {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            border: 1px solid #000;
+        }
+        
+        #draggable {
+            width: 100px;
+            height: 100px;
+            padding: 0.5rem;
+            float: left;
+            margin: 10px 10px 10px 0;
+        }
+        
+        #droppable {
+            width: 150px;
+            height: 150px;
+            padding: 0.5rem;
+            float: left;
+            margin: 10px;
+        }
+        
+        #resizable {
+            width: 150px;
+            height: 150px;
+            padding: 0.5em;
+        }
+        
+        #resizable h3 {
+            text-align: center;
+            margin: 0;
+        }
+        
+        #sortable {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 450px;
+        }
+        
+        #sortable li {
+            margin: 3px 3px 3px 0;
+            padding: 1px;
+            float: left;
+            width: 100px;
+            height: 90px;
+            font-size: 4em;
+            text-align: center;
+        }
+        
+        .ui-state-default {
+            border: 2px solid #777;
+        }
+        
+        .ui-state-highlight {
+            background-color: rgba(75, 0, 130, 0.3);
+            border: 2px solid rgb(75, 0, 130);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="primeira"></div>
+
+    <div id="draggable" class="ui-widget-content">
+        <p>Drag me to my target</p>
+    </div>
+
+    <div id="droppable" class="ui-widget-content">
+        <p>Drop here</p>
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <div id="resizable" class="ui-widget-content">
+        <h3 class="ui-widget-header">Resizable</h3>
+    </div>
+
+    <ul id="sortable">
+        <li class="ui-state-default">1</li>
+        <li class="ui-state-default">2</li>
+        <li class="ui-state-default">3</li>
+        <li class="ui-state-default">4</li>
+        <li class="ui-state-default">5</li>
+        <li class="ui-state-default">6</li>
+        <li class="ui-state-default">7</li>
+        <li class="ui-state-default">8</li>
+        <li class="ui-state-default">9</li>
+        <li class="ui-state-default">10</li>
+        <li class="ui-state-default">11</li>
+        <li class="ui-state-default">12</li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+        $(document).click(function() {
+            /*EFEITO*/
+            $('#primeira ').effect('explode', 'slow');
+
+            /*CLICAR E ARRASTAR MOVENDO O ITEM (DIV)*/
+            $('div').draggable({
+                scroll: false
+            });
+        });
+
+        $(function() {
+            $('#draggable').draggable();
+            $('#droppable').droppable({
+                drop: function(event, ui) {
+                    $(this).addClass("ui-state-highlight").find('p').html('Dropped!');
+                }
+            });
+        });
+
+        $(function() {
+            $("#resizable").resizable();
+        });
+
+        $(function() {
+            $("#sortable").sortable({
+                placeholder: 'ui-state-highlight'
+            });
+            $("#sortable").disableSelection();
+        });
+    </script>
+</body>
+
+</html>

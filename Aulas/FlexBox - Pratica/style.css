@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CLASSES GERAIS DO FRAMEWORK*/
+
+.text-white {
+    color: whitesmoke;
+}
+
+.gold {
+    background-color: gold;
+}
+
+.light-blue {
+    background-color: #00A3D9;
+}
+
+.container {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    max-width: 960px;
+    padding: 0 2%;
+    margin: 0 auto;
+    /*padrao do flex eh nowrap para que tudo fique na measma linha*/
+    flex-wrap: wrap;
+}
+
+.w33 {
+    width: calc(100%/3);
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.padding {
+    padding: 30px 0;
+}
+
+/*CLASSES ESPECIFICAS DO SITE*/
+
+.logo {
+    font-size: 22px;
+    font-family: verdana;
+}
+
+.topo-site {
+    padding: 20px 0;
+}
+
+.topo-site ul li {
+    padding: 0 20px;
+    font-size: 17px;
+    position: relative;
+    top: 7px;
+    display: inline-block;
+}
+
+.topo-site ul li a {
+    text-decoration: none;
+}
+
+.slider {
+    min-height: 600px;
+}
+
+.slider p {
+    font-size: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+/*MEDIA*/
+
+@media screen and (max-width: 768px) {
+    .w50, .w33 {
+        width: 100%;
+    }
+    .left, .right {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+}

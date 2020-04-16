@@ -1,0 +1,37 @@
+@import 'reset';
+
+@mixin borRad($radius) {
+    -webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+   -ms-border-radius: $radius;
+   -o-border-radius: $radius;
+   border-radius: $radius;
+}
+
+.sucesso{
+    background-color: green;
+}
+
+.dimensoes{
+    // width: 80%;
+    width: 900px / 3px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 2% 2%;
+}
+
+$corFont: white; 
+
+div{
+    // background-color: blue;
+    // width: 300px;
+    // height: 300px;
+    // margin: 10px;
+    // @include borRad(10px);
+    // h2{
+    //     color: $corFont;
+    // }
+    @extend .sucesso;
+    @extend .dimensoes;
+    @include borRad(20px);
+}

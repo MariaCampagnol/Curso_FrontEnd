@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #eeeeee;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear {
+    clear: both;
+}
+
+input[type=submit], input[type=text], input[type=email], textarea {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* HEADER */
+
+header {
+    background-image: url('../img/bg.jpg');
+    min-height: 400px;
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    background-image: url('../img/logo.png');
+    background-size: 100% 100%;
+    float: left;
+    position: relative;
+    z-index: 2;
+    width: 140px;
+    height: 22px;
+}
+
+.desktop {
+    float: right;
+}
+
+.desktop ul {
+    list-style-type: none;
+}
+
+.desktop ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.desktop ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.desktop .btn-nav {
+    border: 1px solid white;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+.mobile {
+    display: none;
+    float: right;
+    color: white;
+    cursor: pointer;
+}
+
+.mobile h3 {
+    font-size: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.mobile ul {
+    background-color: #757575;
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 70px 0 30px 0;
+    text-align: center;
+    box-shadow: 0px 19px 50px 30px rgba(0, 0, 0, 0.75);
+}
+
+.mobile ul li {
+    padding: 10px 0;
+}
+
+.mobile ul li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.mobile .btn-nav {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+.chamada-header {
+    padding: 110px 0;
+    color: white;
+}
+
+.chamada-header h2 {
+    font-size: 47px;
+    font-weight: normal;
+}
+
+.chamada-header p {
+    font-size: 20px;
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+/* PADRAO DO INPUT */
+
+form {
+    margin-top: 20px;
+}
+
+form input {
+    display: inline-block;
+    border-radius: 20px;
+    width: 237px;
+    height: 35px;
+    border: 0;
+    padding: 10px;
+    font-size: 15px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+.btn-submit {
+    display: inline-block;
+    border-radius: 20px;
+    width: 150px;
+    height: 35px;
+    margin-left: 10px;
+    border: 0;
+    background-color: #ff9900;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* DESCRICOES DANKI 1*/
+
+.descricao-danki {
+    text-align: center;
+}
+
+.descricao-danki p {
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+    display: inline-block;
+    max-width: 700px;
+    color: #55779c;
+    padding: 50px 0;
+}
+
+/* DESCRICOES DANKI 2*/
+
+.descricao-danki2 {
+    padding: 50px 0;
+}
+
+.descricao-danki2 .container {
+    max-width: 980px;
+}
+
+.descricao-danki2 .texto-descricao {
+    float: left;
+    width: 50%;
+}
+
+.descricao-danki2 .texto-descricao h3 {
+    color: #55779c;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+.descricao-danki2 .texto-descricao p {
+    color: #55779c;
+    font-size: 15px;
+    line-height: 32px;
+}
+
+.descricao-danki2 img {
+    float: left;
+    width: 50%;
+    max-width: 500px;
+}
+
+/* DESCRICOES DANKI 2*/
+
+.descricao-danki3 {
+    padding: 30px 0;
+}
+
+.descricao-danki3 .container {
+    max-width: 980px;
+    background-image: url('../img/bg2.jpg');
+    background-size: cover;
+    min-height: 350px;
+    position: relative;
+}
+
+.descricao-danki3 .box-depoimento {
+    position: absolute;
+    left: 40%;
+    bottom: -40px;
+    width: 70%;
+    max-width: 500px;
+    background-color: white;
+    padding: 40px;
+    color: #55779c;
+    box-shadow: 0px 19px 50px 10px rgba(0, 0, 0, 0.75);
+}
+
+.descricao-danki3 .box-depoimento p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+/* SERVICOS */
+
+.servicos {
+    padding: 100px 0 30px 0;
+}
+
+.servicos .container {
+    max-width: 1100px;
+}
+
+.servicos .title-servicos {
+    text-align: center;
+}
+
+.servicos .title-servicos h3 {
+    color: #55779c;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.servicos .flex-servicos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.servicos .space-servico {
+    display: flex;
+    padding: 30px;
+    width: calc(100%/3);
+}
+
+.servicos .box-servico {
+    border-radius: 3px;
+    box-shadow: 0 8px 20px 0 rgba(122, 122, 122, 0.5);
+    background-color: white;
+    height: 100%;
+}
+
+.servicos .box-servico img {
+    width: 100%;
+}
+
+.servicos .box-servico-wraper {
+    padding: 20px;
+    color: #55779c;
+}
+
+.servicos .box-servico-wraper h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.servicos .box-servico-wraper p {
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.servicos .box-servico-wraper a {
+    display: inline-block;
+    width: 120px;
+    height: 43px;
+    border: 1px solid #6a7c92;
+    color: #6a7c92;
+    text-decoration: none;
+    padding: 4px 20px;
+    border-radius: 20px;
+    line-height: 35px;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    padding: 20px 0;
+}
+
+.portfolio .container {
+    max-width: 980px;
+    padding: 30px 0;
+    background-color: #f2f2f2;
+    box-shadow: 0 8px 20px 0 rgba(122, 122, 122, 0.5);
+}
+
+.portfolio h2 {
+    font-weight: normal;
+    color: #55779c;
+    text-align: center;
+}
+
+.portfolio .empresas {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 10px 0 10px;
+}
+
+.portfolio .empresas .empresa-single {
+    border-style: solid;
+    border-color: #cecece;
+    border-width: 1px 0 1px 1px;
+    width: calc(100% / 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.portfolio .empresas .empresa-single:last-child {
+    border: 1px solid #cecece;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    padding: 30px 0;
+}
+
+.formulario .container {
+    max-width: 700px;
+    text-align: center;
+}
+
+.formulario h2 {
+    text-align: center;
+    color: #55779c;
+    font-weight: normal;
+}
+
+.formulario form {
+    margin-top: 15px;
+}
+
+.formulario form input {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #cecece;
+}
+
+.formulario form textarea {
+    display: inline-block;
+    border-radius: 20px;
+    width: 100%;
+    height: 200px;
+    border: 0;
+    padding: 10px;
+    font-size: 15px;
+    resize: none;
+    margin-top: 20px;
+    border: 1px solid #cecece;
+}
+
+.formulario form .btn-submit {
+    width: 30%;
+}
+
+/* RODAPE */
+
+footer {
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer .box-footer {
+    float: left;
+    padding: 0 15px;
+    width: calc(100% / 3);
+}
+
+footer .box-footer h2 {
+    color: #55779c;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+footer .box-footer p {
+    color: #55779c;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+footer form input {
+    border: 1px solid #cecece;
+}
+
+footer form button {
+    width: 63px;
+    height: 35px;
+    border: 1px solid #55779c;
+    color: #55779c;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+footer form button:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 900px) {
+    .descricao-danki3 .box-depoimento {
+        left: 16%;
+        bottom: 15%;
+    }
+    .servicos {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .chamada-header {
+        text-align: center;
+    }
+    .chamada-header p {
+        margin: 0 auto;
+        max-width: 700px;
+    }
+    .chamada-header form .btn-submit {
+        margin-top: 15px;
+    }
+    .descricao-danki2 .texto-descricao {
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    .descricao-danki2 img {
+        width: 100%;
+        display: block;
+        margin: 15px auto;
+        float: none;
+        max-width: 500px;
+    }
+    .servicos .box-servico {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    .servicos .flex-servicos {
+        display: block;
+        flex-wrap: nowrap;
+    }
+    .servicos .space-servico {
+        display: block;
+        width: 100%;
+    }
+    .portfolio .empresas .empresa-single {
+        width: calc(100% / 2);
+        border-right: 1px solid #cecece;
+    }
+    footer .box-footer{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    footer .box-footer p{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    footer form{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .descricao-danki3 .box-depoimento {
+        bottom: 5%;
+    }
+}

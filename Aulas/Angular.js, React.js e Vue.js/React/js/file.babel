@@ -1,0 +1,58 @@
+var container = document.getElementById('main');
+
+class Box extends React.Component {
+    render() {
+    	function nome(){
+   			return 'Maria Isabel';
+   		}
+
+   		var n = 10;
+
+   		function printH1(){
+   			return <h1> Imprimindo dados atraves de funcao!! <br />Numero = {n} <br />Funcao = {nome()}</h1>
+   		}
+   		
+        return printH1();
+    }
+}
+
+class Box2 extends React.Component {
+	render() {
+		return <h2>{this.props.nome} {this.props.sobrenome}</h2>
+	}
+}
+
+class Formulario extends React.Component {
+    render() {
+        return <form> <input type="text"
+        placeholder="Nome" /> <input type="submit"
+        value="Enviar" /> </form>
+    }
+}
+
+class FormJquery extends React.Component {
+	renderMyApp() {
+		return (<div class="form"> <input type="text"
+        placeholder="Nome" /> <input onClick={this.handleClick} type="submit"
+        value="Enviar" /> </div>);
+	}
+	handleClick(){
+		$('body').css('background-color','indigo').css('color','white');
+		$('body').append('<div class="box" style="width:500px;height:100px;background-color:#E75480;margin:10px 5%;"></div>');
+	}
+    render() {
+        return this.renderMyApp();
+    }
+}
+
+ReactDOM.render(
+	<div class="principal-react">
+		<Formulario />
+		<br />
+		<Box />
+		<br />
+		<Box2 nome="Maria" sobrenome="Isabel Campagnol"/>
+		<br />
+		<FormJquery />
+	</div> 
+, container);

@@ -1,0 +1,97 @@
+/* Custom Stylesheet */
+
+
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+.sect1 {
+    min-height: 400px;
+    position: relative;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 15px 2%;
+    width: 60%;
+}
+
+.input-field input[type=text]:focus+label {
+    color: #311b92;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #311b92;
+    box-shadow: 0 1px 0 0 #311b92;
+}
+
+.input-field input[type=password]:focus+label {
+    color: #311b92;
+}
+
+.input-field input[type=password]:focus {
+    border-bottom: 1px solid #311b92;
+    box-shadow: 0 1px 0 0 #311b92;
+}
+
+.input-field input[type=email]:focus+label {
+    color: #311b92;
+}
+
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid #311b92;
+    box-shadow: 0 1px 0 0 #311b92;
+}
+
+.input-field textarea:focus:not([readonly])+label {
+    color: #311b92;
+}
+
+.input-field textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #311b92;
+    box-shadow: 0 1px 0 0 #311b92;
+}
+
+.custom-title {
+    position: relative;
+}
+
+.custom-title h2 {
+    font-size: 25px;
+    position: relative;
+    color: #777;
+    z-index: 2;
+    padding-right: 5px;
+    background-color: white;
+    display: inline-block;
+}
+
+.custom-title>div {
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    background-color: #777;
+    top: 40px;
+    left: 0;
+    z-index: 1;
+}
+
+.contato .row {
+    margin: 0 auto;
+    max-width: 90%;
+}

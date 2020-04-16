@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem</title>
+</head>
+
+<body>
+    <!-- ## comenta no ejs -->
+    <!-- <h2>Home</h2>
+    <h2>
+        <a href="sobre">Sobre--</a>
+    </h2>
+    <h2><%#= nome %> | <%#= cargo %></h2>
+    <ul>
+        <%# lista.forEach(function(item){ %>
+        <li>
+            <%#= item.telefone %>
+        </li>
+        <%# }); %>
+    </ul> -->
+
+    <h2>Listagem de clientes</h2>
+    <ul>
+        <% lista.forEach(function(cliente){ %>
+        <li>
+            <b>Cliente</b>: <%= cliente.Id %>
+        </li>
+        <li>
+            <b>Nome</b>: <%= cliente.Nome %>
+        </li>
+        <li>
+            <b>Sobrenome</b>: <%= cliente.Sobrenome %>
+        </li>
+        <li>
+            <b>Empresa</b>: <%= cliente.Empresa %>
+        </li>
+        <br>
+        <% }); %>
+    </ul>
+    <br>
+    <a href="cadastro">Cadastrar</a>
+</body>
+
+</html>

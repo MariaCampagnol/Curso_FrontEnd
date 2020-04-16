@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projeto 04</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
+    <meta name="description" content="Conteúdo do meu site.">
+    <meta name="keywords" content="palavras,separadas,por,virgula">
+    <meta name="author" content="Maria Isabel" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/logo.jpg" title="Voltar ao Home"></a>
+            </div>
+            <nav class="desktop">
+                <ul>
+                    <li><a href="../index.html">Home</li></a>
+                    <li><a href="venda.html" style="color: #e22b2b;">Venda</li></a>
+                    <li><a href="sobre.html">Sobre</li></a>
+                    <li><a href="../index.html#contato">Contato</li></a>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <ul>
+                    <li><a href="../index.html">Home</li></a>
+                    <li><a href="venda.html" style="color: #e22b2b;">Venda</li></a>
+                    <li><a href="sobre.html">Sobre</li></a>
+                    <li><a href="../index.html#contato">Contato</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="clear"></div>
+    </header>
+
+    <section></section>
+
+    <footer>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</li></a>
+                    <li><a href="venda.html" style="color: #e22b2b;">Venda</li></a>
+                    <li><a href="sobre.html">Sobre</li></a>
+                    <li><a href="../index.html#contato">Contato</li></a>
+                </ul>
+            </nav>
+            <p><span style="color: #e22b2b;">© Copyright </span> - Todos os direitos reservados</p>
+            <div class="clear"></div>
+        </div>
+    </footer>
+</body>
+
+</html>

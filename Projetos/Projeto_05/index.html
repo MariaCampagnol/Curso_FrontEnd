@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projeto 05</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0">
+    <meta name="description" content="Conteúdo do meu site.">
+    <meta name="keywords" content="palavras,separadas,por,virgula">
+    <meta name="author" content="Maria Isabel" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.jpg" title="Voltar ao Home"></a>
+            </div>
+            <nav class="desktop">
+                <ul>
+                    <li><a href="index.html" style="color: #e22b2b;">Home</li></a>
+                    <li><a href="paginas/venda.html">Venda</li></a>
+                    <li><a href="paginas/sobre.html">Sobre</li></a>
+                    <li><a href="" goto="contato">Contato</li></a>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <ul>
+                    <li><a href="index.html" style="color: #e22b2b;">Home</li></a>
+                    <li><a href="paginas/venda.html">Venda</li></a>
+                    <li><a href="paginas/sobre.html">Sobre</li></a>
+                    <li><a href="" goto="contato">Contato</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="clear"></div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="text-banner">
+                <div class="text-banner-single">Consultoria</div>
+                <div class="text-banner-single">Compra</div>
+                <div class="text-banner-single">Venda</div>
+                <div class="text-banner-single">Contato@outlook.com</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="veiculos-destaque">
+        <div class="container">
+            <div class="line-titulo">
+                <div class="ln1"></div>
+                <h2>Veículos em destaque</h2>
+            </div>
+            <div class="vitrine-destaque">
+                <div class="carro-img" style="background-image: url(img/carro1.jpg);"></div>
+                <div class="carro-info">
+                    <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual</p>
+                    <a class="btn1" href="">Mais Detalhes</a>
+                </div>
+            </div>
+            <div class="vitrine-destaque">
+                <div class="carro-img" style="background-image: url(img/carro1.jpg);"></div>
+                <div class="carro-info">
+                    <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual</p>
+                    <a class="btn1" href="">Mais Detalhes</a>
+                </div>
+            </div>
+            <div class="vitrine-destaque">
+                <div class="carro-img" style="background-image: url(img/carro1.jpg);"></div>
+                <div class="carro-info">
+                    <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual</p>
+                    <a class="btn1" href="">Mais Detalhes</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <section class="servicos-descricao">
+        <div class="half1">
+            <div class="half1-wraper">
+                <h2>Serviços</h2>
+                <ul>
+                    <li>Compra</li>
+                    <li>Venda</li>
+                    <li>Consignação</li>
+                    <li>Consultoria de Veículos</li>
+                    <li>Indicação de mecânicos e peças</li>
+                </ul>
+                <a class="btn1" href="sobre.html">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="half2">
+            <h2>Depoimentos</h2>
+            <div class="depoimento-single">
+                <p>“O Rafael foi muito atencioso, me buscou no aeroporto e garantiu
+                    toda comodidade e conforto no almoço, no transfer, na visita ao
+                    veículo e durante o test-drive”
+                </p>
+                <p>“O Renato foi muito atencioso, me buscou no aeroporto e garantiu
+                    toda comodidade e conforto no almoço, no transfer, na visita ao
+                    veículo e durante o test-drive”
+                </p>
+                <p>“O Rodrigo foi muito atencioso, me buscou no aeroporto e garantiu
+                    toda comodidade e conforto no almoço, no transfer, na visita ao
+                    veículo e durante o test-drive”
+                </p>
+            </div>
+            <div class="navigation">
+                <div class="arrows">
+                    <img name="prev" src="img/arrow-left.png" alt="">
+                    <img name="next"  src="imarrow-right.png" alt="">
+                </div>
+                <div class="nome-depoimento">Maria Isabel Campagnol</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-contato" id="contato">
+        <div class="container">
+            <div class="line-titulo">
+                <div class="ln1"></div>
+                <h2>Entre em contato</h2>
+            </div>
+            <form>
+                <div class="form-wraper w100">
+                    <input type="text" name="nome" placeholder="Nome *" required>
+                </div>
+                <div class="form-wraper w50">
+                    <input type="email" name="email" placeholder="E-mail *" required>
+                </div>
+                <div class="form-wraper w50">
+                    <input type="text" name="telefone" placeholder="Telefone *" required>
+                </div>
+                <div class="form-wraper w100">
+                    <textarea name="mensagem" placeholder="Mensagem *" required></textarea>
+                </div>
+                <div class="form-wraper w100">
+                    <input type="submit" name="acao" class="btn1" value="Enviar">
+                </div>
+                <div class="clear"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="color: #e22b2b;">Home</li></a>
+                    <li><a href="paginas/venda.html">Venda</li></a>
+                    <li><a href="paginas/sobre.html">Sobre</li></a>
+                    <li><a href="" goto="contato">Contato</li></a>
+                </ul>
+            </nav>
+            <p><span>©  Copyright </span> - Todos os direitos reservados</p>
+            <div class="clear"></div>
+        </div>
+    </footer>
+
+    
+    <script src="../js/jquery.js"></script>
+    <script src="../js/functions.js"></script>
+</body>
+
+</html>
